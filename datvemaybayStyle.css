@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Baloo 2', cursive;
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+.nav {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-content {
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 0px 2.4px rgba(60, 58, 58, 0.6);
+    background: white;
+}
+
+.imgnav {
+    width: 4%;
+    padding-bottom: 10px;
+}
+
+.nav-select {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-select a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    margin-top: 16px;
+    opacity: 0.7;
+}
+
+.nav-select a:hover {
+    opacity: 2;
+}
+
+.progress {
+    background-color: black;
+    height: 4px;
+    position: fixed;
+}
+
+/* Banner */
+
+.banner {
+    margin-top: 67.6px;
+    margin-bottom: 67.6px;
+}
+
+.img-banner {
+    height: 320px;
+    background-image: linear-gradient(rgba(21, 17, 17, 0.5), rgba(21, 17, 17, 0.5)), url(banner-datvemaybaypage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position-y: 50%;
+}
+
+/* Plane */
+.heading-plane {
+    text-align: center;
+    font-size: 80px;
+}
+
+.heading-plane i {
+    transform: rotate(-90deg);
+    animation: itagani 0.5s linear;
+}
+
+.heading-plane p {
+    font-size: 24px;
+    color: rgba(12, 24, 24, .7);
+}
+
+.planeticket {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 80px 0;
+}
+
+.plane-ticke-form {
+    border: 1px rgba(60, 58, 58, 0.3) solid;
+    width: 24%;
+    border-radius: 8px;
+    margin: 24px;
+    padding: 20px;
+    opacity: 0;
+}
+
+/* Plane-ticke-obsever */
+.plane-ticke-form-observer {
+    opacity: 1;
+    transition: 2s;
+    animation: observer 0.4s linear ;
+}
+
+@keyframes observer {
+    from {
+        transform: translateY(20%);
+    }
+    to {
+        transform: none
+    }
+}
+/*  */
+
+.from-to i {
+    margin: 0 12px;
+}
+
+.from-to p {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.time p {
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(25, 17, 17, 0.7);
+}
+
+.price-plane {
+    float: right;
+    margin: 16px 0;
+}
+
+.price-plane h2 {
+    color: green;
+}
+
+.btn {
+    float: right;
+}
+
+.btn button {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 12px 16px;
+}
+
+.btn:hover button {
+    background: #ccc;
+    color: black;
+}
+
+@keyframes itagani {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    25% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    75% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+/* Footer */
+.footer-container {
+    width: 100%;
+    height: 174px;
+    background: black;
+    color: white;
+    position: relative;
+}
+
+.footer-container a {
+    color: white;
+}
+
+.footer-container h4 {
+    text-align: center;
+}
+
+.about-of-me {
+    width: 100%;
+    background: black;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 4px;
+    text-align: center;
+}
+
+.about-of-me a {
+    text-decoration: none;
+}
+
+.about-of-me p {
+    text-align: center;
+}
+
+.about-of-me a:hover {
+    text-decoration: underline;
+}
+
+.about-of-me i {
+    width: 24px;
+}
+
+.cpr-by {
+    display: inline;
+}
+
+.cpr-by p {
+    display: inline;
+}
+
+/* Modal */
+.modal-container {
+    background: rgba(13, 11, 11, 0.8);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+.modal-content-container {
+    display: flex;
+    height: 100vh;
+}
+
+.modal-content {
+    width: 700px;
+    min-height: 300px;
+    background: white;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+}
+
+.header-modal-content img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.form-dang-ky {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-content h6 {
+    opacity: 0.6;
+    font-size: 16px;
+}
+
+.form-ho,
+.form-ten {
+    width: 50%;
+    float: left;
+    padding: 6px;
+}
+
+.form-ho input,
+.form-ten input {
+    width: 100%;
+    padding: 12px;
+}
+
+.form-dang-ky .email,
+.phone {
+    padding: 6px;
+}
+
+.form-dang-ky .email input,
+.phone input {
+    width: 100%;
+    padding: 12px;
+}
+
+.form-dang-ky input {
+    border: 1px rgba(168, 164, 164, .5) solid;
+}
+
+.btn-modal {
+    padding: 6px;
+}
+
+.btn-modal button {
+    border: none;
+    text-transform: uppercase;
+    float: right;
+    background-color: black;
+    padding: 12px;
+    color: white;
+    font-weight: 700;
+}
+
+.btn-modal button:hover {
+    background: rgb(207, 203, 203);
+    color: black;
+    cursor: pointer;
+}
+
+.form-dang-ky .noti {
+    color: red;
+    padding: 12px;
+}
+
+.icon-remove {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.icon-remove:hover {
+    background: #ccc;
+    background: black;
+    color: white;
+}
+
+.modal-active {
+    display: block;
+    animation: modalani 0.3s linear;
+}
+
+@keyframes modalani {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

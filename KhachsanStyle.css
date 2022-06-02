@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Baloo 2', cursive;
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+.nav {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-content {
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 0px 2.4px rgba(60, 58, 58, 0.6);
+    background: white;
+}
+
+.imgnav {
+    width: 4%;
+    padding-bottom: 10px;
+}
+
+.nav-select {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-select a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    margin-top: 16px;
+    opacity: 0.7;
+}
+
+.nav-select a:hover {
+    opacity: 2;
+}
+
+.progress {
+    background-color: black;
+    height: 4px;
+    position: fixed;
+}
+
+/* Banner */
+
+.banner {
+    margin-top: 67.6px;
+    margin-bottom: 67.6px;
+}
+
+.img-banner {
+    height: 320px;
+    background-image: linear-gradient(rgba(21, 17, 17, 0.5), rgba(21, 17, 17, 0.5)), url(banner-khachsanpage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position-y: 50%;
+}
+
+/* .img-banner::before {
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 50%;
+    font-weight: 800;
+    box-shadow: 0px 0px 30px rgba(12, 12, 12, 0.4);
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 10px;
+    text-align: center;
+} */
+
+/* Hotel */
+.heading-hotel {
+    text-align: center;
+    font-size: 80px;
+}
+
+.heading-hotel i {
+    animation: itagani 0.4s linear;
+}
+
+.heading-hotel p {
+    font-size: 24px;
+    color: rgba(12, 24, 24, .7);
+}
+
+.image-book-hotel {
+    width: 30%;
+}
+
+.container-content-hotel {
+    padding: 40px;
+}
+
+.image-book-hotel img {
+    width: 100%;
+    padding: 20px;
+}
+
+.booking-hotel {
+    max-width: 800px;
+    margin: 80px auto;
+    display: flex;
+    border: 1px rgba(60, 58, 58, 0.1) solid;
+    border-radius: 8px;
+    opacity: 0;
+}
+
+/* Observer */
+.booking-hotel-observer {
+    opacity: 1;
+    transition: 2s;
+    animation: observer 0.4s linear;
+}
+
+@keyframes observer {
+    from {
+        transform: translateY(20%);
+    }
+
+    to {
+        transform: none
+    }
+}
+
+.booking-hotel:hover {
+    background: rgba(15, 169, 235, .1);
+    transform: translateY(-10px);
+    transition: 0.2s;
+}
+
+.about-hotel {
+    width: 70%;
+    padding: 12px;
+}
+
+.about-hotel .icon-location {
+    color: black;
+    padding: 12px 0;
+    width: 20px;
+}
+
+.about-hotel h3 {
+    color: #0071c2;
+}
+
+.about-hotel .about-hotel-p {
+    text-align: justify;
+}
+
+.price-of-hotel {
+    float: right;
+    padding: 20px 0;
+}
+
+.price-of-hotel h2 {
+    color: green;
+}
+
+/* Footer */
+.footer-container {
+    width: 100%;
+    height: 174px;
+    background: black;
+    color: white;
+    position: relative;
+}
+
+.footer-container a {
+    color: white;
+}
+
+.footer-container h4 {
+    text-align: center;
+}
+
+.about-of-me {
+    width: 100%;
+    background: black;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 4px;
+    text-align: center;
+}
+
+.about-of-me a {
+    text-decoration: none;
+}
+
+.about-of-me p {
+    text-align: center;
+}
+
+.about-of-me a:hover {
+    text-decoration: underline;
+}
+
+.about-of-me i {
+    width: 24px;
+}
+
+.cpr-by {
+    display: inline;
+}
+
+.cpr-by p {
+    display: inline;
+}
+
+@keyframes itagani {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

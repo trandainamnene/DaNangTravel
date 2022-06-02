@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Baloo 2', cursive;
+  scroll-behavior: smooth;
+}
+
+/* Navigation */
+.nav{
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.nav-content{
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0px 0px 2.4px rgba(60, 58, 58 , 0.6);
+  background: white;
+}
+
+.imgnav {
+  width: 4%;
+  padding-bottom: 10px;
+}
+
+.nav-select {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-select a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+  margin-top: 16px;
+  opacity: 0.7;
+}
+
+.nav-select a:hover {
+  opacity: 2;
+}
+
+.progress {
+  background-color: black;
+  height: 4px;
+  position: fixed;
+}
+/* Form Đăng Ký */
+.form {
+    margin-top: 67.600px ;
+    height: calc(100vh - 67.600px);
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)) , url(banner-form-xerieng-duadon-page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-content {
+    margin: auto;
+    width: 480px;
+    min-height: 150px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 12px;
+}
+
+.heading-form {
+    padding : 12px;
+}
+
+.heading-form h5 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #292929;
+}
+
+.form-dang-ky {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-content h6 {
+    opacity: 0.6;
+    font-size: 16px;
+}
+
+.form-ho , .form-ten {
+    width: 50%;
+    float: left;
+    padding: 6px;
+}
+
+.form-ho input, .form-ten input {
+    width: 100%;
+    padding: 12px;
+}
+
+.form-dang-ky .email,.phone {
+    padding: 6px;
+}
+
+.form-dang-ky .email input,.phone input{
+    width: 100%;
+    padding: 12px;
+}
+
+.form-dang-ky input {
+    border: 1px rgba(168, 164, 164 , .5) solid;
+}
+
+.btn {
+    padding: 6px;
+}
+
+.btn button {
+    border: none;
+    text-transform: uppercase;
+    float : right;
+    background-color: black;
+    padding: 12px;
+    color: white;
+    font-weight: 700;
+}
+
+.btn button:hover {
+    background: rgb(207, 203, 203);
+    color : black;
+    cursor: pointer;
+}
+
+.form-dang-ky .noti {
+    color: red;
+    padding: 12px;
+}
